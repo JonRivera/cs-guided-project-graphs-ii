@@ -58,6 +58,24 @@ Constraints:
 - `trust[i][0] != trust[i][1]`
 - `1 <= trust[i][0], trust[i][1] <= N`
 """
+
+
+# Give:
+# N amount people
+# labels 1- N for each person
+# Judge : trusts no one and everyone body trusts the judge
+# Trust array trust[i] has person a trusting  person b
+
+# Want
+# Find person that satifies condition for judge-> Return the label for judge
+# Else return -1
+
+# Plan
+# We want the person that is trusted by everyone so we need a way to track this
+# counter that as loop over the trust array we jeep track of how many instances person label x trusted somebody
+# We also want to track the judge not trusting anybody
+#
+
 def find_judge(N, trust):
     """
     Inputs:
@@ -68,4 +86,4 @@ def find_judge(N, trust):
     int
     """
     # Your code here
-
+    #
